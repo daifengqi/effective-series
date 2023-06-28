@@ -1,10 +1,12 @@
 #include <iostream>
 
-void changeInt(int * const p) {
+// Item 3: Use const whenever possible.
+
+void changeInt(int *const p) {
     *p = 10;
 }
 
-void foo(const char* p) {
+void foo(const char *p) {
     // can read data pointed to by p
     std::cout << p << std::endl;
 
@@ -16,7 +18,7 @@ void foo(const char* p) {
     std::cout << p << std::endl;
 }
 
-void bar(char * const p) {
+void bar(char *const p) {
     p[0] = 'A';
 }
 
@@ -29,13 +31,13 @@ int maini3() {
     std::cout << *x2 << std::endl;
     delete x2;
 
-    const char * g = "abc";
+    const char *g = "abc";
     g = "cde";
     foo(g);
 
     std::cout << g << std::endl;
 
-    const char * a = "aaa";
+    const char *a = "aaa";
     //    bar(a);
     std::cout << a << std::endl;
     return 0;

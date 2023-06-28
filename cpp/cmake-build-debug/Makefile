@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cescqi/FactorQuant/cpp
+CMAKE_SOURCE_DIR = /Users/cescqi/FactorQuant/effective-series/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cescqi/FactorQuant/cpp/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cescqi/FactorQuant/effective-series/cpp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cescqi/FactorQuant/cpp/cmake-build-debug/CMakeFiles /Users/cescqi/FactorQuant/cpp/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cescqi/FactorQuant/effective-series/cpp/cmake-build-debug/CMakeFiles /Users/cescqi/FactorQuant/effective-series/cpp/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cescqi/FactorQuant/cpp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cescqi/FactorQuant/effective-series/cpp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,30 @@ i4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i4.cpp.s
 .PHONY : i4.cpp.s
 
+i5.o: i5.cpp.o
+.PHONY : i5.o
+
+# target to build an object file
+i5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5.cpp.o
+.PHONY : i5.cpp.o
+
+i5.i: i5.cpp.i
+.PHONY : i5.i
+
+# target to preprocess a source file
+i5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5.cpp.i
+.PHONY : i5.cpp.i
+
+i5.s: i5.cpp.s
+.PHONY : i5.s
+
+# target to generate assembly for a file
+i5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5.cpp.s
+.PHONY : i5.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... i4.o"
 	@echo "... i4.i"
 	@echo "... i4.s"
+	@echo "... i5.o"
+	@echo "... i5.i"
+	@echo "... i5.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
