@@ -225,6 +225,30 @@ i5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5.cpp.s
 .PHONY : i5.cpp.s
 
+i5extend.o: i5extend.cpp.o
+.PHONY : i5extend.o
+
+# target to build an object file
+i5extend.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5extend.cpp.o
+.PHONY : i5extend.cpp.o
+
+i5extend.i: i5extend.cpp.i
+.PHONY : i5extend.i
+
+# target to preprocess a source file
+i5extend.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5extend.cpp.i
+.PHONY : i5extend.cpp.i
+
+i5extend.s: i5extend.cpp.s
+.PHONY : i5extend.s
+
+# target to generate assembly for a file
+i5extend.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5extend.cpp.s
+.PHONY : i5extend.cpp.s
+
 i6.o: i6.cpp.o
 .PHONY : i6.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... i5.o"
 	@echo "... i5.i"
 	@echo "... i5.s"
+	@echo "... i5extend.o"
+	@echo "... i5extend.i"
+	@echo "... i5extend.s"
 	@echo "... i6.o"
 	@echo "... i6.i"
 	@echo "... i6.s"
