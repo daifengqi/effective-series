@@ -92,6 +92,9 @@
 		<Unit filename="/Users/cescqi/FactorQuant/effective-series/cpp/i5.cpp">
 			<Option target="cpp"/>
 		</Unit>
+		<Unit filename="/Users/cescqi/FactorQuant/effective-series/cpp/i6.cpp">
+			<Option target="cpp"/>
+		</Unit>
 		<Unit filename="/Users/cescqi/FactorQuant/effective-series/cpp/main.cpp">
 			<Option target="cpp"/>
 		</Unit>

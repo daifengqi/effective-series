@@ -225,6 +225,30 @@ i5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i5.cpp.s
 .PHONY : i5.cpp.s
 
+i6.o: i6.cpp.o
+.PHONY : i6.o
+
+# target to build an object file
+i6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i6.cpp.o
+.PHONY : i6.cpp.o
+
+i6.i: i6.cpp.i
+.PHONY : i6.i
+
+# target to preprocess a source file
+i6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i6.cpp.i
+.PHONY : i6.cpp.i
+
+i6.s: i6.cpp.s
+.PHONY : i6.s
+
+# target to generate assembly for a file
+i6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp.dir/build.make CMakeFiles/cpp.dir/i6.cpp.s
+.PHONY : i6.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... i5.o"
 	@echo "... i5.i"
 	@echo "... i5.s"
+	@echo "... i6.o"
+	@echo "... i6.i"
+	@echo "... i6.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
