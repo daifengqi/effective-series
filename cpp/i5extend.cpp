@@ -27,7 +27,7 @@ void increment(int *num) { // Pass by pointer
     *num++;
 }
 
-int main() {
+int i5extend() {
     int x = 10;
     increment(x);  // Passes reference, x is now 11
     increment(&x); // Passes pointer, x is now 12

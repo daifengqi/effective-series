@@ -1,10 +1,11 @@
 #include <memory>
 
+// When destructors will be called
 class Dog {
 };
 
 
-int main() {
+int i7extend() {
 
     Dog *d = new Dog();  // Constructor called
     delete d;            // Destructor called
