@@ -1,5 +1,7 @@
 #include <iostream>
 
+// Ietem 5. Know what functions C++ silently writes and calls
+
 // Compilers may implicitly generate a class’s default constructor, copy constructor,
 // copy assignment operator, and destructor.
 

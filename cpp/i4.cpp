@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Make sure that objects are initialized before they’re used.
+// Item 4. Make sure that objects are initialized before they’re used.
 
 
 class Creature {

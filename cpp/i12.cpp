@@ -1,5 +1,5 @@
 
-// Copy all parts of an object
+// Item 12. Copy all parts of an object
 
 #include <string>
 

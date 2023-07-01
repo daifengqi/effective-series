@@ -1,5 +1,7 @@
 #include <memory>
 
+// Item 13: Use objects to manage resources.
+
 //✦ To prevent resource leaks, use RAII objects that acquire resources in their constructors
 //  and release them in their destructors.
 

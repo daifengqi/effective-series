@@ -1,3 +1,5 @@
+// item 10. Have assignment operator returns a reference to *this
+
 class Widget {
 public:
     Widget &operator=(const Widget &rhs) {

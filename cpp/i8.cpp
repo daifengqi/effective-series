@@ -1,3 +1,5 @@
+// Item 8. Prevent exceptions from leaving destructors
+
 //✦ Destructors should never emit exceptions. If functions called in a destructor may throw,
 // the destructor should catch any exceptions, then swallow them or terminate the program.
 

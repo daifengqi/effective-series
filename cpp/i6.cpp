@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Explicitly disallow the use of compiler- generated functions you do not want.
+// Item 6. Explicitly disallow the use of compiler- generated functions you do not want.
 
 class HomeForSale {
 public:
