@@ -15,7 +15,7 @@ private:
     int *num;
 };
 
-void f() {
+void fi15() {
     Test *ptr = new Test;
     std::unique_ptr<Test> uptr(ptr);
     Test *t1 = uptr.get();

@@ -28,7 +28,7 @@ Investment *createInvestment() {
     return new Investment();
 }
 
-void f() {
+void fi13() {
     // use unique_ptr
     std::unique_ptr<Investment> uInv(createInvestment());
     // move
@@ -49,13 +49,13 @@ class Foo {
 public:
     explicit Foo(int x) : x_(x) {}
 
-    int getX() const { return x_; }
+    [[nodiscard]] int getX() const { return x_; }
 
 private:
     int x_;
 };
 
-void bar(Foo foo) {
+void bari13(Foo foo) {
     int x = foo.getX();
 }
 
@@ -63,7 +63,7 @@ int i13extend() {
 //    Foo foo1 = 42;  // Error: implicit conversion not allowed
     Foo foo2(42);   // OK: explicit constructor call
 //    bar(42);        // Error: implicit conversion not allowed
-    bar(Foo(42));   // OK: explicit constructor call
+    bari13(Foo(42));   // OK: explicit constructor call
     return 0;
 }
 //In general, you should use unique_ptr when you have exclusive ownership of an object,

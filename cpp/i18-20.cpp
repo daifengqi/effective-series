@@ -36,7 +36,7 @@ struct Derived : public Base {
 };
 //void doSomething(Base b) { /* ... */ }
 
-void f() {
+void fi20() {
     Foo f;
     doSomething(f); // Slicing - d is sliced down to a Base
 }

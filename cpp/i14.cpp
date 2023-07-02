@@ -16,7 +16,7 @@ public:
     Resource1 &operator=(const Resource1 &) = delete;
 };
 
-void foo1() {
+void foo1i14() {
     Resource1 r1;  // OK
 //     Resource r2(r1);  // error: copy constructor is deleted
     // r1 = r2;  // error: copy assignment operator is deleted
@@ -46,7 +46,7 @@ private:
     std::vector<int> data;
 };
 
-void foo() {
+void fooi14() {
     Resource r1;
     Resource r2(r1);  // OK, r2 now has a deep copy of r1's resource
     Resource r3 = r1;  // OK, r3 now has a deep copy of r1's resource

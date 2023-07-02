@@ -6,7 +6,7 @@ auto lambda = []() -> std::string* {
     return ptr;
 };
 
-void f() {
+void fi16() {
     std::string* str = lambda();
 }
 

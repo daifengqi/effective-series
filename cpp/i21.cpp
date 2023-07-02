@@ -8,9 +8,9 @@
 //  So if you return a pointer or reference to a local stack object,
 //  that pointer/reference will be dangling after the function returns.
 
-int *foo() {
+int *foo21() {
     int x = 10; // local stack object
-    return &x; // dangling pointer! x is destroyed when foo() returns
+//    return &x; // error: dangling pointer! x is destroyed when foo() returns
 }
 
 
@@ -20,12 +20,12 @@ int *foo() {
 // that reference can outlive the actual object and become dangling.
 
 
-int &bar() {
+int &bar21() {
     int *x = new int(10); // heap allocated
     return *x; // dangling reference! x is destroyed when bar() returns
 }
 
-int *baz() {
+int *baz21() {
     static int x = 10;
     return &x; // potentially dangling if baz() is called multiple times!
 }

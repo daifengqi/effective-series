@@ -1,7 +1,7 @@
 //A left-hand object in C++ is an object whose name appears on the left-hand
 // side of an assignment or initialization.
 
-void foo() {
+void fooi10extend() {
     // For example:
     int x = 5;  // x is a left-hand object
     x = 10;     // x is again a left-hand object
